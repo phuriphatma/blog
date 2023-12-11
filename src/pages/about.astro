@@ -1,14 +1,16 @@
 ---
 import "../styles/global.css"
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 
 const pageTitle = "About Me";
 const identity = {
-    firstName: "Sarah",
-    country: "Canada",
-    occupation: "Technical Writer",
-    hobbies: ["photography", "birdwatching", "baseball"],
+    firstName: "Furry",
+    country: "Thailand",
+    occupation: "Spy",
+    hobbies: ["thinking", "programming", "baseball"],
 };
-const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
+const skills = ["Basic HTML CSS JS Astro (Just learned)", "Basic Python", "Swift"];
 
 const happy = true;
 const finished = false;
@@ -39,9 +41,7 @@ const textCase = "uppercase";
         </style>
     </head>
     <body>
-        <a href="/">Home</a>
-        <a href="/about/">About</a>
-        <a href="/blog">Blog</a>
+        <Header />
 
         <h1>{pageTitle}</h1>
         <h2>... and my new Astro site!</h2>
@@ -89,5 +89,6 @@ const textCase = "uppercase";
                 <p>My goal is not 3 days.</p>
             )
         }
+        <Footer />
     </body>
 </html>
